@@ -9,6 +9,9 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthInterceptor } from './services/auth.interceptor';
 import { LogoutComponent } from './components/auth/logout/logout.component';
+import { NgToastModule } from 'ng-angular-popup';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +25,8 @@ import { LogoutComponent } from './components/auth/logout/logout.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    NgToastModule,
+    BrowserAnimationsModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
